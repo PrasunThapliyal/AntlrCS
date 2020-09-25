@@ -11,3 +11,8 @@ The Hello, World !
 Reading Template from a file
 	Here I'm reading a template file just as a string, so essentially this is similar to the previous example
 
+--------------------
+Code Generation - HBM file
+	Create a template for HBM - the example shows a list of properties and bags inside the template
+	TODO : Right now, I've populated the template using dummy data - this data should be read from the schema and fed to teh template
+	And then we have a working JSON to HBM converter

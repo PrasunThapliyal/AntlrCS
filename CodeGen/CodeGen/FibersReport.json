@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FibersReport",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "List of Fibers",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "FibersReportItem.json"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "data"
+  ]
+}
+

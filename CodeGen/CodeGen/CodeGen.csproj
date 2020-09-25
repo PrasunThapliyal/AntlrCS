@@ -6,8 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="FibersReport.json" />
+    <None Remove="FibersReportItem.json" />
     <None Remove="HBMTemplate.st" />
     <None Remove="HelloWorld.st" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="FibersReport.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FibersReportItem.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +32,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
     <PackageReference Include="StringTemplate4" Version="4.0.8" />
   </ItemGroup>
 

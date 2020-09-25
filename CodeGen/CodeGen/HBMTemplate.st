@@ -7,14 +7,18 @@
       \<generator class = "hilo"/>
     \</id>
 
-    \<property name="<propertyName>" type="<csType>">
-      \<column name="<columnName>" index="<indexName>"  sql-type="<sqlType>"/>
+    <properties:{property | 
+    \<property name="<property.PropertyName>" type="<property.CsType>">
+      \<column name="<property.ColumnName>" index="<property.IndexName>"  sql-type="<property.SqlType>"/>
     \</property>
+    }>
 
-    \<bag name="<bagName>" lazy="true" cascade="all-delete-orphan" fetch="select">
-      \<key column="<bagFKColumnName>">\</key>
-      \<one-to-many class="<bagType>">\</one-to-many>
+    <bags:{bag | 
+    \<bag name="<bag.BagName>" lazy="true" cascade="all-delete-orphan" fetch="select">
+      \<key column="<bag.BagFKColumnName>">\</key>
+      \<one-to-many class="<bag.BagClassName>">\</one-to-many>
     \</bag>
+    }>
 
   \</class>
 \</hibernate-mapping>

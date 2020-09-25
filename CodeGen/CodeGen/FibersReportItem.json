@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "FibersReportItem",
+  "description": "Fibers",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "FiberTL Name",
+      "type": "string"
+    },
+    "fiberId": {
+      "description": "Fiber Id",
+      "type": "string"
+    },
+    "fiberPairString": {
+      "description": "Fiber Pair String",
+      "type": "string"
+    },
+    "fiberType": {
+      "description": "FiberType",
+      "type": "string"
+    },
+    "onepSiteByAEndSite": {
+      "description": "Site A",
+      "type": "string"
+    },
+    "onepSiteByZEndSite": {
+      "description": "Site Z",
+      "type": "string"
+    },
+    "fiberLength": {
+      "description": "Fiber Length",
+      "type": "number"
+    },
+    "totalLoss": {
+      "description": "Total loss",
+      "type": "number"
+    },
+    "fiberLossSourceType": {
+      "description": "Loss Source Type: FromLength or Manual",
+      "type": "string"
+    },
+    "fiberLoss": {
+      "description": "Fiber Loss",
+      "type": "number"
+    },
+    "lossPerKm": {
+      "description": "Fiber Loss Per Km",
+      "type": "number"
+    },
+    "marginDbPerSpan": {
+      "description": "marginDbPerSpan",
+      "type": "number"
+    },
+    "marginDbPerKm": {
+      "description": "marginDbPerKm",
+      "type": "number"
+    },
+    "marginSourceType": {
+      "description": "Margin Source Type: FromLength or Manual",
+      "type": "string"
+    },
+    "headPPL": {
+      "description": "headPPL",
+      "type": "number"
+    },
+    "tailPPL": {
+      "description": "tailPPL",
+      "type": "number"
+    },
+    "pmdType": {
+      "description": "pmdType",
+      "type": "string"
+    },
+    "pmdCoefficient": {
+      "description": "pmdCoefficient",
+      "type": "number"
+    },
+    "pmdMean": {
+      "description": "pmdMean",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}
